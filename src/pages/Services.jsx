@@ -82,19 +82,21 @@ export default function Services() {
   const location = useLocation().pathname
 
   return (
-    <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16">
+    <div
+    // style={{ transform: 'scale(0.90)' }}
+     className="mx-auto max-w-6xl px-6 sm:px-6 lg:px-8  my-28">
        <div className="inline-flex items-center gap-2 mb-4 px-4 py-1.5 rounded-full bg-cyan-900/20 border border-cyan-500/20 backdrop-blur-sm">
                <span className="relative flex h-2 w-2">
                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75"></span>
                  <span className="relative inline-flex rounded-full h-2 w-2 bg-cyan-500"></span>
                </span>
-               <span className="text-xs font-bold tracking-[0.2em] text-cyan-300 uppercase">OUR SERVICES</span>
+               <span className="text-xs font-semibold tracking-[0.2em] text-cyan-300 uppercase">OUR SERVICES</span>
              </div>
      
       
       
      
-      <h2 className="mt-2 text-4xl sm:text-5xl font-bold text-white">
+      <h2 className="mt-2 text-4xl sm:text-5xl font-semibold text-white">
         Complete Water <span className="text-cyan-400">Treatment Solutions</span>
       </h2>
       <p className="mt-4 text-cyan-100/80">
@@ -115,7 +117,7 @@ export default function Services() {
                   {s.icon}
               </span>
               <div>
-                <div className="text-white font-semibold">{s.title}</div>
+                <div className="text-white font-semisefont-semibold">{s.title}</div>
                 
               </div>
             </div>
@@ -195,7 +197,7 @@ export default function Services() {
                   </div>
                 </div>
               </div>
-              <div className="mt-4 text-white font-semibold text-lg">{step.title}</div>
+              <div className="mt-4 text-white font-semisefont-semibold text-lg">{step.title}</div>
               <div className="mt-2 text-sm leading-relaxed text-cyan-100/80">{step.desc}</div>
               <div className="pointer-events-none absolute -right-10 -top-10 size-32 rounded-full bg-cyan-500/10 blur-2xl opacity-0 transition group-hover:opacity-100" />
             </div>

@@ -4,18 +4,20 @@ export default function Experience() {
 
   const location = useLocation().pathname
   return (
-    <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16">
+    <div 
+    // style={{ transform: 'scale(0.90)' }}
+    className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-1">
        <div className="inline-flex items-center gap-2 mb-4 px-4 py-1.5 rounded-full bg-cyan-900/20 border border-cyan-500/20 backdrop-blur-sm">
               <span className="relative flex h-2 w-2">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-cyan-500"></span>
               </span>
-              <span className="text-xs font-bold tracking-[0.2em] text-cyan-300 uppercase">OUR EXPERIENCE</span>
+              <span className="text-xs font-semibold tracking-[0.2em] text-cyan-300 uppercase">OUR EXPERIENCE</span>
             </div>
       
      <div className="mt-8 border-l-2 pl-6 border-white/10  gap-6 flex flex-col lg:flex-row justify-between">
       <div className="">
-       <h2 className="mt-2 text-4xl sm:text-5xl font-bold text-white">
+       <h2 className="mt-2 text-4xl sm:text-5xl font-semibold text-white">
         Growth & <span className="text-cyan-400">Development</span>
       </h2>
       <p className="mt-4 text-cyan-100/80 max-w-3xl">
@@ -24,7 +26,7 @@ export default function Experience() {
       </p>
       
         <div className="rounded-2xl mt-6 ring-white/10 transition hover:-translate-y-0.5 hover:border-white/20">
-          <div className="text-white text-xl font-semibold">Capability Areas</div>
+          <div className="text-white text-xl font-semisemfont-semibold">Capability Areas</div>
           <div className="mt-1 text-cyan-100/70 text-lg">Core solutions delivered across multiple sectors</div>
           <ul className="mt-6 grid gap-3 text-cyan-100/80 text-lg">
             {[
@@ -49,29 +51,29 @@ export default function Experience() {
           </ul>
         </div></div>
         {/* <div className="rounded-2xl border border-white/10 bg-white/5 p-7 ring-1 ring-white/10">
-          <div className="text-white text-lg font-semibold">Continuous Improvement</div>
+          <div className="text-white text-lg font-semisemfont-semibold">Continuous Improvement</div>
           <p className="mt-3 text-cyan-100/80">
             Through continuous learning, system optimization, and technology upgrades, we ensure our solutions remain
             efficient, reliable, and future-ready.
           </p>
           <div className="mt-6 grid grid-cols-2 gap-4">
             <div className="rounded-2xl border border-white/10 bg-white/5 p-5 text-center ring-1 ring-white/10 transition hover:-translate-y-0.5 hover:border-white/20">
-              <div className="text-xl font-bold text-white">2007</div>
+              <div className="text-xl font-semibold text-white">2007</div>
               <div className="text-cyan-100/80">Established Since</div>
               <div className="text-xs text-cyan-100/60 mt-1">Legal company from 2012</div>
             </div>
             <div className="rounded-2xl border border-white/10 bg-white/5 p-5 text-center ring-1 ring-white/10 transition hover:-translate-y-0.5 hover:border-white/20">
-              <div className="text-xl font-bold text-white">17+</div>
+              <div className="text-xl font-semibold text-white">17+</div>
               <div className="text-cyan-100/80">Years of Experience</div>
               <div className="text-xs text-cyan-100/60 mt-1">In water treatment</div>
             </div>
             <div className="rounded-2xl border border-white/10 bg-white/5 p-5 text-center ring-1 ring-white/10 transition hover:-translate-y-0.5 hover:border-white/20">
-              <div className="text-xl font-bold text-white">100%</div>
+              <div className="text-xl font-semibold text-white">100%</div>
               <div className="text-cyan-100/80">Client Satisfaction</div>
               <div className="text-xs text-cyan-100/60 mt-1">Quality guaranteed</div>
             </div>
             <div className="rounded-2xl border border-white/10 bg-white/5 p-5 text-center ring-1 ring-white/10 transition hover:-translate-y-0.5 hover:border-white/20">
-              <div className="text-xl font-bold text-white">ISO</div>
+              <div className="text-xl font-semibold text-white">ISO</div>
               <div className="text-cyan-100/80">Standards Compliance</div>
               <div className="text-xs text-cyan-100/60 mt-1">International quality</div>
             </div>
@@ -137,7 +139,7 @@ export default function Experience() {
                   </div>
                 </div>
               </div>
-              <div className="mt-4 text-white font-semibold text-lg">{step.title}</div>
+              <div className="mt-4 text-white font-semisemfont-semibold text-lg">{step.title}</div>
               <div className="mt-2 text-sm leading-relaxed text-cyan-100/80">{step.desc}</div>
               <div className="pointer-events-none absolute -right-10 -top-10 size-32 rounded-full bg-cyan-500/10 blur-2xl opacity-0 transition group-hover:opacity-100" />
             </div>
@@ -166,7 +168,7 @@ export default function Experience() {
                 </svg>
               </div>
               <div>
-                <h3 className="text-2xl font-bold text-white">Years of Excellence</h3>
+                <h3 className="text-2xl font-semibold text-white">Years of Excellence</h3>
                 <p className="text-slate-400">Building trust through quality</p>
               </div>
             </div>
@@ -210,10 +212,10 @@ export default function Experience() {
               {[
                 { number: '17+', label: 'Years' },
                 { number: '500+', label: 'Projects' },
-                { number: '50+', label: 'Experts' },
+                { number: '10+', label: 'Experts' },
               ].map((stat, index) => (
                 <div key={index} className="text-center">
-                  <div className="text-2xl lg:text-3xl font-semibold text-white">{stat.number}</div>
+                  <div className="text-2xl lg:text-3xl font-semisemfont-semibold text-white">{stat.number}</div>
                   <div className="text-xs text-slate-500 uppercase tracking-wider">{stat.label}</div>
                 </div>
               ))}
@@ -228,7 +230,7 @@ export default function Experience() {
 {/* bottom */}
 {location === '/' ? <></> : <div className=" lg:border-r-2 border-b-2 border-t-2 border-white/10 grid lg:gap-6 lg:grid-cols-2 lg:items-start">
         <div className="lg:col-span- border-b-2 border-r-2 lg:border-b-0 lg:border-r-0 border-white/10 px-4 ring-white/10">
-          <div className="text-white text-lg font-semibold pt-4">Milestones</div>
+          <div className="text-white text-lg font-semisemfont-semibold pt-4">Milestones</div>
           <div className="mt-1 text-cyan-100/70 text-sm">A timeline of growth and technical development</div>
           <div className="mt-6 grid gap-4">
             {[

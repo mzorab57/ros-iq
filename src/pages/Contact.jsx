@@ -4,7 +4,9 @@ import { FaWhatsapp } from "react-icons/fa";
 
 export default function Contact() {
   return (
-    <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16">
+    <div 
+    // style={{ transform: 'scale(0.90)' }}
+    className="mx-auto max-w-6xl px-6 lg:px-8 py-16 mt-24">
       <div className="text-cyan-300 font-medium tracking-wide">GET IN TOUCH</div>
 
       <h2 className="mt-2 text-4xl sm:text-5xl font-bold text-white">
@@ -40,7 +42,7 @@ export default function Contact() {
             </div>
           </div>
           <div className="mt-5 text-cyan-100/80 group-hover:text-white transition">
-            +964 770 990 5873
+          +964 750 246 0616
           </div>
         </Link>
 
@@ -115,7 +117,7 @@ export default function Contact() {
         <div className="bg-white/5 p-7 py-12 ring-1 ring-white/10">
           <div className="text-white font-semibold text-xl">Workshop</div>
           <div className="text-cyan-100/80">
-            Modern Warehouse, near Mamostayan City, No. 33
+            Modern Warehouse, Sulaymaniyah near Mamostayan City, No. 33
           </div>
         </div>
       </div>

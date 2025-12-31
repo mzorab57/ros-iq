@@ -8,7 +8,9 @@ export default function About() {
   const location = useLocation();
 
   return (
-    <section className="relative w-full  overflow-hidden py-20 lg:py-28 "
+    <section
+    
+    className="relative w-full my-9  overflow-hidden py-20 lg:py-2 "
     
     >
       
@@ -21,16 +23,16 @@ export default function About() {
         <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20"></div>
       </div> */}
 
-      <div className="relative  z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div className="relative  z-10 mx-auto max-w-6xl px-8 sm:px-6 lg:px-8">
         
         {/* Header Section */}
         <div className="max-w-3xl ">
           <div className="inline-flex items-center gap-2 rounded-full border border-cyan-500/30 bg-cyan-900/20 px-4 py-1.5 backdrop-blur-md mb-6">
             <span className="w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span>
-            <span className="text-xs font-bold tracking-widest text-cyan-300 uppercase">About R.O.S Co.</span>
+            <span className="text-xs font-semibold tracking-widest text-cyan-300 uppercase">About R.O.S Co.</span>
           </div>
           
-          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight leading-tight">
+          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-semibold text-white tracking-tight leading-tight">
             Leading Water Treatment <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 to-blue-500">
               Solutions & Innovation
@@ -42,7 +44,7 @@ export default function About() {
         <div className="mt-8 grid grid-cols-1 lg:grid-cols-3 gap-8 border-l-2 border-b-2 border-white/10 pl-6 lg:pl-10">
           <div className="lg:col-span-2 space-y-6 pt-5 text-xl text-slate-300 leading-relaxed">
             <p className='max-w-xl'>
-              <strong className="text-white ">R.O.S Co. – Water Solutions</strong> is a specialized water treatment and water management company based in Sulaymaniyah, Iraq. We don't just treat water; we engineer purity.
+              <strong className="text-white ">R.O.S Co. (Reverse Osmosis System Company) – <span className='font-semibold'>Water Solutions</span></strong> is a specialized water treatment and water management company based in Sulaymaniyah, Iraq. We don't just treat water; we engineer purity.
             </p>
             <p className='max-w-lg lg:text-xl text-lg'>
               We deliver customized water treatment solutions, including design, supply, installation, assembly, and commissioning of water and wastewater treatment systems for <span className="text-cyan-400">industrial</span>, <span className="text-cyan-400">commercial</span>, and <span className="text-cyan-400">domestic</span> applications.
@@ -52,7 +54,7 @@ export default function About() {
          {/* H2O design */}
             {/* Right - 3D Water Drop Illustration */}
             <div className="relative ml-6 lg:-translate-y-16   ">
-              <div className="relative w-64 h-80 lg:w-72 lg:h-96">
+              <div className="relative w-56 h-72 sm:w-64 sm:h-80 lg:w-72 lg:h-96">
                 {/* Glow */}
                 <div className="absolute inset-0 bg-cyan-500/20 rounded-full blur-3xl animate-pulse"></div>
                 
@@ -76,7 +78,7 @@ export default function About() {
                 {/* Center Label */}
                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 transform -rotate-0 z-10">
                   <div className="text-center">
-                    <div className="text-4xl font-black text-white" style={{ textShadow: '0 2px 20px rgba(0,0,0,0.5)' }}>H₂O</div>
+                    <div className="text-4xl font-semibold text-white" style={{ textShadow: '0 2px 20px rgba(0,0,0,0.5)' }}>H₂O</div>
                     <div className="text-xs text-cyan-300 uppercase tracking-widest mt-1">Pure Water</div>
                   </div>
                 </div>
@@ -96,7 +98,7 @@ export default function About() {
             </div>
             
             <div className="relative   z-10">
-              <h3 className="text-2xl font-bold text-white mb-2">What We Do</h3>
+              <h3 className="text-2xl font-semibold text-white mb-2">What We Do</h3>
               
               
               <p className="text-slate-300 mb-8">
@@ -126,7 +128,7 @@ export default function About() {
           {/* Right Card: Core Strengths */}
           <div className="flex mb-6 lg:my-20 flex-col gap-6">
             <div className="bg-slate-900/50  border-white/10 p-8 lg:p-10 backdrop-blur-md h-full">
-              <h3 className="text-2xl font-bold text-white mb-2">Core Strengths</h3>
+              <h3 className="text-2xl font-semibold text-white mb-2">Core Strengths</h3>
              
 
               <div className="grid sm:grid-cols-2 gap-4 lg:gap-9">
@@ -172,7 +174,7 @@ export default function About() {
                     <div className="w-10 h-10 rounded-lg bg-slate-800 flex items-center justify-center text-cyan-400 mb-3 group-hover/card:scale-110 group-hover/card:bg-cyan-900/30 transition-transform">
                       {s.icon}
                     </div>
-                    <div className="text-white font-bold text-lg">{s.title}</div>
+                    <div className="text-white font-semibold text-lg">{s.title}</div>
                     <div className="mt-2 text-sm text-slate-400 leading-snug">{s.desc}</div>
                   </div>
                 ))}
@@ -200,8 +202,8 @@ export default function About() {
             />
             
             <div className="absolute bottom-8 left-8 z-20">
-              <div className="bg-black/60 backdrop-blur-md border border-white/10 px-6 py-3 rounded-xl">
-                 <p className="text-cyan-400 text-xs font-bold uppercase tracking-widest mb-1">Facility Overview</p>
+              <div className="bg-smfont-semibold/60 backdrop-blur-md border border-white/10 px-6 py-3 rounded-xl">
+                 <p className="text-cyan-400 text-xs font-semibold uppercase tracking-widest mb-1">Facility Overview</p>
                  <p className="text-white font-medium">Advanced Filtration Units • Sulaymaniyah</p>
               </div>
             </div>

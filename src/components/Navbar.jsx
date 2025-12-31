@@ -32,13 +32,16 @@ export default function Navbar() {
   return (
     <>
       <header 
+      
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
           scrolled 
-            ? 'py-2 bg-[#0a0f1a]/90 backdrop-blur-xl border-b border-white/10 shadow-2xl shadow-black/20' 
-            : 'py-4 mb-8 bg-transparent'
+            ? 'py-1 bg-[#ua0f1a]/90 backdrop-blur-xl border-b border-white/10 shadow-2xl shadow-black/20' 
+            : 'py-2 mb-8 bg-transparent'
         }`}
       >
-        <div className="mx-auto max-w-7xl  px-4 sm:px-6 lg:px-8">
+        <div 
+        // style={{ transform: 'scale(0.90)' }}
+        className="mx-auto max-w-6xl  px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between">
             
             {/* ===== LOGO ===== */}
@@ -47,36 +50,13 @@ export default function Navbar() {
               className="group flex items-center gap-3 relative"
               onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
             >
-              {/* Logo Glow */}
-              <div className="absolute -inset-4 bg-cyan-500/20 rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-              
-              {/* Logo Icon */}
+              {/* <div className="absolute -inset-4  rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               <div className="relative">
-                <div className={`relative flex items-center justify-center rounded-2xl transition-all duration-500 ${
-                  scrolled ? 'w-10 h-10' : 'w-12 h-12'
-                } bg-gradient-to-br from-cyan-500/20 to-blue-500/20 border border-cyan-400/30 group-hover:border-cyan-400/60 group-hover:scale-110`}>
-                  {/* Animated Ring */}
-                  <div className="absolute inset-0 rounded-2xl border border-cyan-400/20 animate-ping opacity-0 group-hover:opacity-100"></div>
-                  
-                  {/* Water Drop Icon */}
-                  <svg 
-                    xmlns="http://www.w3.org/2000/svg" 
-                    viewBox="0 0 24 24" 
-                    fill="currentColor" 
-                    className={`text-cyan-400 transition-all duration-300 group-hover:text-cyan-300 group-hover:drop-shadow-[0_0_8px_rgba(6,182,212,0.8)] ${
-                      scrolled ? 'w-5 h-5' : 'w-6 h-6'
-                    }`}
-                  >
-                    <path d="M12 3c-2.8 3.6-7 7.3-7 11.1A7 7 0 0012 21a7 7 0 007-6.9C19 10.3 14.8 6.6 12 3z" />
-                  </svg>
-                </div>
-                
-                {/* Online Indicator */}
-                <div className="absolute -bottom-0.5 -right-0.5 w-3 h-3 bg-green-400 rounded-full border-2 border-[#0a0f1a] animate-pulse"></div>
-              </div>
+                   <img src="/logo.jpeg" alt="logo" className=" h-12 w-24 rounded-2xl" />
+              </div> */}
 
               {/* Logo Text */}
-              <div className={`transition-all duration-300 ${scrolled ? 'scale-95' : 'scale-100'}`}>
+             {/* <div className={`transition-all duration-300 ${scrolled ? 'scale-95' : 'scale-100'}`}>
                 <div className="flex items-center gap-1.5">
                   <span className="text-white font-bold text-lg tracking-tight group-hover:text-cyan-100 transition-colors">R.O.S</span>
                   <span className="text-cyan-400 font-bold text-lg">Co.</span>
@@ -84,7 +64,28 @@ export default function Navbar() {
                 <div className="text-cyan-300/60 text-[10px] font-medium tracking-widest uppercase group-hover:text-cyan-300/80 transition-colors">
                   Water Solutions
                 </div>
+              </div>  */}
+
+
+          {/* Logo Section */}
+          <Link to="/" className="flex items-center gap-3 group">
+          
+            
+            {/* Logo Text */}
+            <div className="flex flex-col">
+              <div className="flex items-center gap-1">
+                <span className="text-2xl sm:text-3xl font-black text-white tracking-tight">R</span>
+                <span className="text-red-500 text-xl sm:text-2xl font-black">.</span>
+                <span className="text-2xl sm:text-3xl font-black text-white tracking-tight">O</span>
+                <span className="text-red-500 text-xl sm:text-2xl font-black">.</span>
+                <span className="text-2xl sm:text-3xl font-black text-white tracking-tight">S</span>
+                <span className="text-red-500 text-xl sm:text-2xl font-black">.</span>
+                <span className="text-2xl sm:text-3xl font-black text-white tracking-tight ml-1">Co</span>
+                <span className="text-red-500 text-xl sm:text-2xl font-black">.</span>
               </div>
+              <span className="text-xs sm:text-sm font-bold text-cyan-400 tracking-wide -mt-1">Water Solutions</span>
+            </div>
+          </Link>
             </Link>
 
             {/* ===== DESKTOP NAVIGATION ===== */}
@@ -253,16 +254,7 @@ export default function Navbar() {
 const ScrollProgress = () => {
   const [progress, setProgress] = useState(0)
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollTop = window.scrollY
-      const docHeight = document.documentElement.scrollHeight - window.innerHeight
-      const scrollPercent = (scrollTop / docHeight) * 100
-      setProgress(scrollPercent)
-    }
-    window.addEventListener('scroll', handleScroll)
-    return () => window.removeEventListener('scroll', handleScroll)
-  }, [])
+ 
 
   return (
     <div className="fixed top-0 left-0 right-0 h-0.5  bg-transparent z-[60]">

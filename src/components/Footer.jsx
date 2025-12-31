@@ -10,11 +10,11 @@ export default function Footer() {
           <nav className="flex items-center gap-6 text-sm">
             <NavLink to="/about" className="text-cyan-200/80 hover:text-white">About</NavLink>
             <NavLink to="/services" className="text-cyan-200/80 hover:text-white">Services</NavLink>
-            <NavLink to="/experience" className="text-cyan-200/80 hover:text-white">Experience</NavLink>
+            <NavLink to="/projects" className="text-cyan-200/80 hover:text-white">Projects</NavLink>
             <NavLink to="/contact" className="text-cyan-200/80 hover:text-white">Contact</NavLink>
           </nav>
         </div>
-      <div className=" pt-2  text-gray-400 text-sm">
+      <div className=" pt-2 text-center sm:text-start my-5 text-gray-400 text-sm">
           <p>&copy; {new Date().getFullYear()} R.O.S Co. all rights reserved.</p>
           <p className="mt-1">
             Powered by{" "}

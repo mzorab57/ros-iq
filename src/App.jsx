@@ -14,9 +14,12 @@ export default function App() {
   return (
     <BrowserRouter>
       <Background />
-      <div className="relative z-10 min-h-screen text-cyan-100">
+     <div
+  className="relative z-10  text-cyan-100 origin-top"
+ 
+>
         <Navbar  />
-        <main className='mt-24'>
+        <main >
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
