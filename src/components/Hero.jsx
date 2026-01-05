@@ -1,6 +1,15 @@
-
+import { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
+import i18n from 'i18next';
 
 const Hero = () => {
+
+    const { t } = useTranslation();
+ 
+
+  useEffect(() => {
+    document.documentElement.dir = i18n.language === "ku" ? "rtl" : "ltr";
+  }, [i18n.language]);
   return (
     <div className="relative mt-8 min-h-screen w-full overflow-hidden flex items-center justify-center">
       
@@ -38,13 +47,13 @@ const Hero = () => {
               <span className="animate-ping absolute h-full w-full rounded-full bg-cyan-400 opacity-75"></span>
               <span className="relative h-2 w-2 rounded-full bg-cyan-400"></span>
             </span>
-            <span className="text-xs font-bold text-cyan-300 tracking-widest uppercase">Advanced Filtration</span>
+            <span className="text-xs font-bold text-cyan-300 tracking-widest uppercase">{t('hero.badge')}</span>
           </div>
           
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-semibold text-white mb-4">
-            PURE <span className="text-cyan-400">WATER</span>
+            {t('hero.pure')} <span className="text-cyan-400">{t('hero.water')}</span>
             <span className="text-slate-500"> • </span>
-            PURE <span className="text-cyan-400">LIFE</span>
+           {i18n.language === 'ku' ? null : t('hero.pure')} <span className="text-cyan-400">{t('hero.life')}</span>
           </h1>
         </div>
 
@@ -52,16 +61,16 @@ const Hero = () => {
         <div className="relative flex items-center justify-center">
           
           {/* ===== LEFT SIDE - DIRTY WATER INPUT ===== */}
-          <div className="absolute left-0 lg:left-[5%] top-1/2 -translate-y-1/2 z-20 flex items-center">
+          <div dir="ltr" className="absolute left-0 lg:left-[5%] top-1/2 -translate-y-1/2 z-20 flex items-center">
             {/* Input Info Card */}
             <div className="hidden lg:block mr-4 text-right">
               <div className="px-4 py-3 rounded-2xl bg-amber-500/10 border border-amber-500/30 backdrop-blur-xl">
                 <div className="flex items-center gap-2 justify-end mb-2">
-                  <span className="text-amber-400 text-sm font-bold">INPUT</span>
+                  <span className="text-amber-400 text-sm font-bold">{t('hero.input_label')}</span>
                   <div className="w-2 h-2 rounded-full bg-amber-400 animate-pulse"></div>
                 </div>
                 <p className="text-amber-200/80 text-xs max-w-[140px]">
-                  Untreated water with sediments & impurities
+                  {t('hero.input_desc')}
                 </p>
               </div>
             </div>
@@ -140,7 +149,7 @@ const Hero = () => {
                 </div>
 
                 {/* ===== INTERNAL WATER VISUALIZATION ===== */}
-                <div className="absolute left-14 lg:left-28 right-14 lg:right-28 top-4 bottom-4 rounded-[60px] overflow-hidden">
+                <div  className="absolute left-14 lg:left-28 right-14 lg:right-28 top-4 bottom-4 rounded-[60px] overflow-hidden">
                   
                   {/* Stage 1: Dirty Water (Left) */}
                   <div className="absolute left-0 top-0 bottom-0 w-[30%] bg-gradient-to-r from-amber-700/60 via-amber-600/50 to-amber-500/40 overflow-hidden">
@@ -161,7 +170,7 @@ const Hero = () => {
                     ))}
                     {/* Dirty Label */}
                     <div className="absolute bottom-2 left-2 px-2 py-1 rounded bg-amber-900/50 backdrop-blur-sm">
-                      <span className="text-[8px] font-bold text-amber-300 uppercase tracking-wider">Dirty</span>
+                      <span className="text-[8px] font-bold text-amber-300 uppercase tracking-wider">{t('hero.dirty')}</span>
                     </div>
                   </div>
 
@@ -224,7 +233,7 @@ const Hero = () => {
                     <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent animate-shimmer"></div>
                     {/* Clean Label */}
                     <div className="absolute bottom-2 right-2 px-2 py-1 rounded bg-cyan-900/50 backdrop-blur-sm">
-                      <span className="text-[8px] font-bold text-cyan-300 uppercase tracking-wider">Pure</span>
+                      <span className="text-[8px] font-bold text-cyan-300 uppercase tracking-wider">{t('hero.pure')}</span>
                     </div>
                   </div>
 
@@ -272,7 +281,7 @@ const Hero = () => {
           </div>
 
           {/* ===== RIGHT SIDE - CLEAN WATER OUTPUT ===== */}
-          <div className="absolute right-0 lg:right-[5%] top-1/2 -translate-y-1/2 z-20 flex items-center">
+          <div dir="ltr" className="absolute right-0 lg:right-[5%] top-1/2 -translate-y-1/2 z-20 flex items-center">
             {/* Output Pipe */}
             <div className="relative">
               {/* Main Pipe */}
@@ -317,10 +326,10 @@ const Hero = () => {
               <div className="px-4 py-3 rounded-2xl bg-cyan-500/10 border border-cyan-500/30 backdrop-blur-xl">
                 <div className="flex items-center gap-2 mb-2">
                   <div className="w-2 h-2 rounded-full bg-cyan-400 animate-pulse shadow-lg shadow-cyan-400/50"></div>
-                  <span className="text-cyan-400 text-sm font-bold">OUTPUT</span>
+                  <span className="text-cyan-400 text-sm font-bold">{t('hero.output_label')}</span>
                 </div>
                 <p className="text-cyan-200/80 text-xs max-w-[140px]">
-                  Crystal clear water, 99.9% pure
+                  {t('hero.output_desc')}
                 </p>
                 {/* <div className="flex items-center gap-1 mt-2">
                   <span className="text-green-400 text-[10px]">●</span>
@@ -332,7 +341,7 @@ const Hero = () => {
         </div>
 
         {/* Bottom Info Section */}
-        <div className="flex flex-col sm:flex-row justify-center items-center gap-6 mt-16">
+        <div dir="ltr" className="flex flex-col sm:flex-row justify-center items-center gap-6 mt-16">
           {/* Left Info */}
           <div className="flex items-center gap-3 px-6 py-3 rounded-2xl bg-amber-500/10 border border-amber-500/20">
             <div className="w-10 h-10 rounded-xl bg-amber-500/20 flex items-center justify-center">
@@ -341,8 +350,8 @@ const Hero = () => {
               </svg>
             </div>
             <div>
-              <div className="text-amber-400 text-sm font-bold">DIRTY WATER</div>
-              <div className="text-amber-200/60 text-xs">Sediments & Impurities</div>
+              <div className="text-amber-400 text-sm font-bold">{t('hero.dirty_water_title')}</div>
+              <div className="text-amber-200/60 text-xs">{t('hero.dirty_water_desc')}</div>
             </div>
           </div>
 
@@ -356,15 +365,15 @@ const Hero = () => {
           </div>
 
           {/* Right Info */}
-          <div className="flex items-center gap-3 px-6 py-3 rounded-2xl bg-cyan-500/10 border border-cyan-500/20">
+          <div dir="ltr" className="flex items-center gap-3 px-6 py-3 rounded-2xl bg-cyan-500/10 border border-cyan-500/20">
             <div className="w-10 h-10 rounded-xl bg-cyan-500/20 flex items-center justify-center">
               <svg className="w-5 h-5 text-cyan-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
             </div>
             <div>
-              <div className="text-cyan-400 text-sm font-bold">PURE WATER</div>
-              <div className="text-cyan-200/60 text-xs">99.9% Purified</div>
+              <div className="text-cyan-400 text-sm font-bold">{t('hero.pure_water_title')}</div>
+              <div className="text-cyan-200/60 text-xs">{t('hero.pure_water_desc')}</div>
             </div>
           </div>
         </div>
@@ -443,4 +452,4 @@ const Hero = () => {
   )
 }
 
-export default Hero
+export default Hero;

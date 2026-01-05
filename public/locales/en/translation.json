@@ -1,0 +1,372 @@
+{
+    "nav": {
+      "home": "Home",
+      "about": "About",
+      "services": "Services",
+      "projects": "Projects",
+      "contact": "Contact"
+    },
+
+    "hero": {
+    "badge": "Advanced Filtration",
+    "pure": "PURE",
+    "water": "WATER",
+    "life": "LIFE",
+    "input_label": "INPUT",
+    "input_desc": "Untreated water with sediments & impurities",
+    "output_label": "OUTPUT",
+    "output_desc": "Crystal clear water, 99.9% pure",
+    "dirty": "Dirty",
+    "clean": "Pure",
+    "dirty_water_title": "DIRTY WATER",
+    "dirty_water_desc": "Sediments & Impurities",
+    "pure_water_title": "PURE WATER",
+    "pure_water_desc": "99.9% Purified"
+  },
+
+  
+  "about": {
+    "badge": "About R.O.S Co.",
+    "title_line1": "Leading Water Treatment",
+    "title_gradient": "Solutions & Innovation",
+    "intro_company_name": "R.O.S Co. (Reverse Osmosis System Company) – Water Solutions",
+    "intro_1": "is a specialized water treatment and water management company based in Sulaymaniyah, Iraq. We don't just treat water; we engineer purity.",
+    "intro_2": "We deliver customized water treatment solutions, including design, supply, installation, assembly, and commissioning of water and wastewater treatment systems for industrial, commercial, and domestic applications.",
+    "pure_water_drop": "Pure Water",
+    "what_we_do_title": "What We Do",
+    "what_we_do_desc": "We plan, engineer, and deliver water & wastewater systems from concept to commissioning — then support performance long after handover.",
+    "what_we_do_list": [
+      "System design and process selection",
+      "Supply, fabrication, and installation",
+      "Testing, commissioning, and training",
+      "Maintenance, upgrades, and spare parts"
+    ],
+    "core_strengths_title": "Core Strengths",
+    "strengths": {
+      "engineering": { "title": "Engineering Focus", "desc": "Right sizing, stable operation, clear documentation." },
+      "quality": { "title": "Quality First", "desc": "International standards compliance and robust build." },
+      "cost": { "title": "Cost Efficiency", "desc": "Optimized CAPEX/OPEX with reliable performance." },
+      "support": { "title": "Long-Term Support", "desc": "Maintenance plans, upgrades, and spare parts." }
+    },
+    "img_badge": "Facility Overview",
+    "img_text": "Advanced Filtration Units • Sulaymaniyah"
+  },
+
+  "experience": {
+    "badge": "Our Experience",
+    "title_1": "Growth &",
+    "title_2": "Development",
+    "intro_text": "With years of hands-on experience in water and wastewater treatment projects, R.O.S Co. has demonstrated steady growth and technical development across multiple sectors.",
+    "capability_title": "Capability Areas",
+    "capability_subtitle": "Core solutions delivered across multiple sectors",
+    "capability_list": [
+      "Industrial and process water treatment systems",
+      "RO and RO-EDI high-purity water plants",
+      "Wastewater and sewage treatment facilities",
+      "Containerized and site-built treatment systems"
+    ],
+    "stats_title": "Years of Excellence",
+    "stats_subtitle": "Building trust through quality",
+    "timeline": [
+      { "label": "Foundation Years" },
+      { "label": "Regional Expansion" },
+      { "label": "Industrial Growth" },
+      { "label": "Innovation Era" }
+    ],
+    "stats": {
+      "years": "Years",
+      "projects": "Projects",
+      "experts": "Experts"
+    },
+    "milestones_title": "Milestones",
+    "milestones_subtitle": "A timeline of growth and technical development",
+    "milestones_list": [
+      { "title": "Started operations", "desc": "Water solutions delivered across multiple applications." },
+      { "title": "Legal company registration", "desc": "Expanded capacity and formal project delivery." },
+      { "title": "Continuous development", "desc": "Ongoing system optimization and technology upgrades." }
+    ],
+    "how_we_work_title": "How We Work",
+    "how_we_work_subtitle": "A clear process, from assessment to long-term support",
+    "steps": [
+      { "title": "Assess", "desc": "Review water quality, capacity, and site constraints." },
+      { "title": "Engineer", "desc": "Select process and size equipment for stable operation." },
+      { "title": "Deliver", "desc": "Install, test, commission, and train operators." },
+      { "title": "Support", "desc": "Maintain performance with service and spare parts." }
+    ]
+  },
+
+  "services": {
+    "badge": "Our Services",
+    "title_main": "Complete Solutions for",
+    "title_highlight": "Water Treatment",
+    "description": "From design to operation, we offer integrated and customized water treatment services tailored to meet your needs.",
+    "items": {
+      "ro": {
+        "title": "Reverse Osmosis (RO) Systems",
+        "desc": "Design and supply of customized RO systems for industrial and drinking water applications.",
+        "points": ["Custom design", "Installation", "Commissioning"]
+      },
+      "edi": {
+        "title": "RO-EDI and High-Purity Water",
+        "desc": "High-purity water treatment solutions for power plants and oil & gas facilities.",
+        "points": ["RO + EDI integration", "Ultra-pure water", "Industrial grade"]
+      },
+      "wastewater": {
+        "title": "Industrial Wastewater Treatment",
+        "desc": "Industrial waste treatment solutions and removal of oils and hydrocarbons.",
+        "points": ["Effluent treatment", "Water reuse", "Compliance systems"]
+      },
+      "stp": {
+        "title": "Sewage Treatment Plants (STP)",
+        "desc": "Integrated and customized STP systems using MBBR technology and conventional processes.",
+        "points": ["MBBR technology", "Custom design", "Turnkey installation"]
+      },
+      "carwash": {
+        "title": "Car Wash Water Recycling",
+        "desc": "Water recovery and reuse systems to reduce freshwater consumption.",
+        "points": ["Water recovery", "Compact design", "Cost saving"]
+      },
+      "filtration": {
+        "title": "Filtration and Softening Systems",
+        "desc": "Sand, carbon, multimedia filtration and water softening systems.",
+        "points": ["Multi-media filters", "Water softeners", "Pre-treatment"]
+      },
+      "odor": {
+        "title": "Odor Control Systems",
+        "desc": "Odor mitigation systems for wastewater and well water applications.",
+        "points": ["Odor removal", "Custom solutions", "Installation"]
+      },
+      "om": {
+        "title": "Operation and Maintenance",
+        "desc": "System performance assessment, preventive and corrective maintenance, and spare parts supply.",
+        "points": ["24/7 support", "Spare parts", "Performance optimization"]
+      },
+      "consultation": {
+        "title": "Engineering Consultations",
+        "desc": "Water quality analysis, system sizing, and appropriate process selection.",
+        "points": ["Water analysis", "System sizing", "Technical guidance"]
+      }
+    },
+    "steps": {
+      "design": { "title": "Design", "desc": "Water analysis, process selection, and system sizing." },
+      "build": { "title": "Build", "desc": "Supply, manufacturing, installation, and site integration." },
+      "commission": { "title": "Commission", "desc": "Testing, commissioning, and operator training." },
+      "support": { "title": "Support", "desc": "Maintenance, spare parts Spear parts , consumables supply, and performance upgrades." }
+    }
+  },
+
+  
+ 
+  "projects": {
+    "badge": "Our Portfolio",
+    "title_main": "Engineering",
+    "title_highlight": "Excellence",
+    "intro": "Engineering excellence through innovative water treatment solutions across industrial, medical, and infrastructure projects.",
+    "view_gallery": "Click to view gallery",
+    "categories": {
+      "all": "All",
+      "industrial": "Industrial",
+      "medical": "Medical",
+      "infrastructure": "Infrastructure",
+      "recycling": "Recycling"
+    },
+    "locations": {
+      "sulaymaniyah": "Sulaymaniyah",
+      "kurdistan": "Kurdistan",
+      "erbil": "Erbil",
+      "iraq": "Iraq"
+    },
+    "list": {
+      "zhyan": {
+        "title": "Zhyan Water Bottle Industry – RO System",
+        "desc": "Complete RO system package (12 m³/h) consisting of sand filter, carbon filter, UV, and ultra-filtration for premium bottled water production.",
+        "images": { "img_main_unit": "Main RO System Unit", "img_control_panel": "Control Panel & Filters" }
+      },
+      "dana_gas": {
+        "title": "Dana Gas Filtration",
+        "desc": "High-capacity filtration removing suspended solids and hydrocarbons for oil & gas operations.",
+        "images": { "img_filtration": "Industrial Filtration System" }
+      },
+      "erbil_airport": {
+        "title": "Erbil Intl. Airport",
+        "desc": "Strategic water softener installation protecting critical airport plumbing infrastructure.",
+        "images": { "img_airport_system": "Airport Water System", "img_installation": "Installation Complete" }
+      },
+      "edi_16m": {
+        "title": "Ultra-Pure Industrial EDI",
+        "desc": "Advanced Electrodeionization system delivering ultra-pure water with near-zero conductivity for specialized industrial needs.",
+        "images": { "img_edi_unit": "EDI System 16m³/h" }
+      },
+      "asia_hospital": {
+        "title": "Asia Hospital MBBR",
+        "desc": "Bio-Reactor sewage treatment designed specifically for hazardous hospital wastewater.",
+        "images": { "img_reactor": "MBBR Reactor Tank", "img_process": "Treatment Process" }
+      },
+      "dual_ro": {
+        "title": "Dual Purpose RO",
+        "desc": "Versatile RO unit serving both potable drinking water and industrial process needs.",
+        "images": { "img_compact_ro": "Compact RO Unit" }
+      },
+      "car_wash": {
+        "title": "Car Wash Recycling",
+        "desc": "Eco-friendly recycling system reducing environmental impact and allowing water reuse.",
+        "images": { "img_recycling_sys": "Car Wash Recycling System" }
+      },
+      "cont_softener": {
+        "title": "Containerized Softener",
+        "desc": "Plug-and-play containerized solution for rapid deployment in remote oil fields.",
+        "images": { "img_container_unit": "Containerized Unit" }
+      },
+      "jet_ro": {
+        "title": "High Pressure Jet RO",
+        "desc": "Specialized low-conductivity water system preventing nozzle blockage in cutting machinery.",
+        "images": { "img_ext": "RO Container External", "img_int": "Internal Components" }
+      },
+      "abg_refinery": {
+        "title": "ABG Refinery EDI",
+        "desc": "Critical steam production supply for high-pressure boilers in refinery operations.",
+        "images": { "img_refinery_sys": "Refinery EDI System" }
+      }
+    }
+  },
+
+  
+  "contact": {
+    "badge": "Get in touch",
+    "title": "Let's Discuss Your",
+    "title_highlight": "Project",
+    "desc": "Ready to start your water treatment project? Contact us for a free consultation and customized quote.",
+    "phone": "Phone",
+    "tap_call": "Tap to call",
+    "whatsapp": "WhatsApp",
+    "fast_response": "Fast response",
+    "email": "Email",
+    "tap_compose": "Tap to compose",
+    "office_address": "Office Address",
+    "office_location": "Sulaymaniyah, Kurdistan Region, Iraq",
+    "office_building": "Chwarbakh Building No. 2",
+    "workshop": "Workshop",
+    "workshop_location": "Modern Warehouse, Sulaymaniyah near Mamostayan City, No. 33"
+  
+},
+
+
+  "moreAbout": {
+    "vision_title": "Our Vision",
+    "vision_desc": "To be a leading water treatment solutions provider in Iraq and the region, recognized for technical expertise, system reliability, and continuous improvement.",
+    "mission_title": "Our Mission",
+    "mission_desc": "To design and deliver high-quality water treatment systems, providing custom-engineered solutions and supporting clients with long-term system performance.",
+    "values_title": "Our Values",
+    "values_subtitle": "How we deliver consistent quality on every project",
+    "values": {
+      "v1": { "title": "Quality Assured", "desc": "International standards compliance" },
+      "v2": { "title": "Expert Team", "desc": "Professional engineers & technicians" },
+      "v3": { "title": "Custom Solutions", "desc": "Tailored to your specific needs" },
+      "v4": { "title": "Future Ready", "desc": "Continuous technology upgrades" }
+    },
+    "stats": {
+      "est": { "label": "Established Since", "sub": "Legal company from 2012" },
+      "exp": { "label": "Years of Experience", "sub": "In water treatment" },
+      "sat": { "label": "Client Satisfaction", "sub": "Quality guaranteed" },
+      "iso": { "label": "Standards Compliance", "sub": "International quality" }
+    },
+    "cta_title": "Need a system designed for your site?",
+    "cta_subtitle": "Share your water quality and capacity requirements.",
+    "cta_btn": "Request Consultation"
+  },
+
+  
+  "projectspage": {
+    "badge": "Our Projects",
+    "hero_title_1": "Project",
+    "hero_title_2": "Gallery",
+    "hero_subtitle": "Click any image to view in fullscreen gallery",
+    "labels": {
+      "capacity": "Capacity",
+      "location": "Location",
+      "year": "Year",
+      "click_view": "Click to View",
+      "custom": "Custom"
+    },
+    "categories": {
+      "industrial": "Industrial",
+      "medical": "Medical",
+      "infrastructure": "Infrastructure",
+      "recycling": "Recycling"
+    },
+    "locations": {
+      "sulaymaniyah": "Sulaymaniyah",
+      "kurdistan": "Kurdistan Region",
+      "erbil": "Erbil",
+      "iraq": "Iraq"
+    },
+    "p1": {
+      "title": "Zhian Water Factory - RO System",
+      "desc": "Integrated RO system consisting of sand filter, carbon filter, UV, and ultrafiltration for premium bottled water production. This comprehensive system ensures the highest quality drinking water meeting international standards.",
+      "features": ["Sand Filter", "Carbon Filter", "UV Sterilization", "Ultrafiltration", "RO Membrane"],
+      "img1": "Main RO System Unit", "img2": "Control Panel and Filters"
+    },
+    "p2": {
+      "title": "Potable Water Filtration system for DANA Gas Company",
+      "desc": "High-capacity filtration system designed to remove suspended solids, organic matter, and hydrocarbons, providing clean and sterilized water.",
+      "features": ["Hydrocarbon Removal", "Steel Filtration", "Industrial Grade", "24/7 Operation"],
+      "img1": "Filtration System Overview"
+    },
+    "p3": {
+      "title": "Erbil International Airport",
+      "desc": "Strategic water softener installation to protect the airport's plumbing infrastructure from scale, turbidity, organic matter, and bacterial contamination.",
+      "features": ["Water Softening", "Scale Prevention", "Bacterial Control", "Continuous Supply"],
+      "img1": "Airport Water System", "img2": "Completed Installation"
+    },
+    "p4": {
+      "title": "Industrial Ultra-Pure Water EDI System",
+      "desc": "Advanced electrodeionization system providing ultra-pure water with near-zero conductivity for specialized industrial applications requiring the highest purity standards.",
+      "features": ["EDI Technology", "Ultra-Pure Water Production", "Near-Zero Conductivity", "Industrial Scale"],
+      "img1": "16 m³/h EDI System"
+    },
+    "p5": {
+      "title": "Asia Hospital - MBBR Treatment",
+      "desc": "Moving bed biofilm reactor sewage treatment system specifically designed for hazardous hospital wastewater using MBBR technology to safely treat medical waste.",
+      "features": ["MBBR Technology", "Medical Waste", "Biological Treatment", "Safe Discharge"],
+      "img1": "MBBR Reactor Tank", "img2": "Treatment Process"
+    },
+    "p6": {
+      "title": "Dual-Purpose RO System",
+      "desc": "Multi-purpose RO unit designed to serve both drinking water and industrial process needs, providing flexibility and efficiency in water treatment Cutting machine or high pressure water nozzle - spray.",
+      "features": ["Dual Purpose", "Drinking Water", "Industrial Use", "Compact Design"],
+      "img1": "Compact RO Unit"
+    },
+    "p7": {
+      "title": "Car Wash Water Recycling",
+      "desc": "Eco-friendly recycling system designed to reduce suspended solids, oils, and grease while providing high-quality water suitable for reuse.",
+      "features": ["Water Recycling", "Oil Removal", "Eco-Friendly", "Cost Saving"],
+      "img1": "Car Wash Water Recycling System"
+    },
+    "p8": {
+      "title": "Containerized Water Softener - Dana Gas",
+      "desc": "Container-ready solution designed for rapid deployment in remote oil fields, to remove water hardness and prevent scaling in cooling systems.",
+      "features": ["Containerized", "Rapid Deployment", "Remote-Ready", "Plug & Play"],
+      "img1": "Containerized Unit"
+    },
+    "p9": {
+      "title": "High-Pressure RO System",
+      "desc": "Specialized low-conductivity water system (200 L/h) to prevent nozzle clogging in cutting machines.",
+      "features": ["High Pressure", "Low Conductivity", "Nozzle-Safe", "Precision Water"],
+      "img1": "External RO Container", "img2": "Internal Components"
+    },
+    "p10": {
+      "title": "ABG Refinery - EDI System",
+      "desc": "Water supply system for steam production in high-pressure boilers for refinery operations. Complete design, assembly, installation, and commissioning.",
+      "features": ["Refinery Grade", "Boiler Feed", "Steam Production", "High Pressure"],
+      "img1": "Refinery EDI System"
+    }
+  }
+
+
+
+
+
+
+
+
+}

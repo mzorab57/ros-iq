@@ -1,28 +1,30 @@
 import { Link } from "react-router-dom";
 import { FaWhatsapp } from "react-icons/fa";
-
+import { useTranslation } from "react-i18next";
 
 export default function Contact() {
+  const { t } = useTranslation();
+
   return (
-    <div 
-    // style={{ transform: 'scale(0.90)' }}
-    className="mx-auto max-w-6xl px-6 lg:px-8 py-16 mt-24">
-      <div className="text-cyan-300 font-medium tracking-wide">GET IN TOUCH</div>
+    <div className="mx-auto max-w-6xl px-6 lg:px-8 py-16 mt-24">
+      <div className="text-cyan-300 font-medium tracking-wide uppercase">
+        {t('contact.badge')}
+      </div>
 
       <h2 className="mt-2 text-4xl sm:text-5xl font-bold text-white">
-        Let's Discuss Your <span className="text-cyan-400">Project</span>
+        {t('contact.title')} <span className="text-cyan-400">{t('contact.title_highlight')}</span>
       </h2>
 
       <p className="mt-4 text-cyan-100/80">
-        Ready to start your water treatment project? Contact us for a free consultation and customized quote.
+        {t('contact.desc')}
       </p>
 
       {/* Contact Cards */}
-      <div className="mt-8 border-l-2 border-b-2 border-t-2 p-6 border-white/10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      <div dir="ltr" className="mt-8 border-l-2 border-b-2 border-t-2 p-6 border-white/10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         
         {/* Phone */}
         <Link
-          to="tel:+9647709905873"
+          to="tel:+9647502460616"
           className="group bg-white/5 p-7 ring-1 ring-white/10 transition hover:-translate-y-0.5 hover:border-white/20"
         >
           <div className="flex items-center gap-3">
@@ -37,12 +39,12 @@ export default function Contact() {
               </svg>
             </span>
             <div>
-              <div className="text-white font-semibold">Phone</div>
-              <div className="text-sm text-cyan-100/70">Tap to call</div>
+              <div className="text-white font-semibold">{t('contact.phone')}</div>
+              <div className="text-sm text-cyan-100/70">{t('contact.tap_call')}</div>
             </div>
           </div>
           <div className="mt-5 text-cyan-100/80 group-hover:text-white transition">
-          +964 750 246 0616
+            +964 7719905873
           </div>
         </Link>
 
@@ -58,8 +60,8 @@ export default function Contact() {
               <FaWhatsapp className="h-5 w-5 text-green-400" />
             </span>
             <div>
-              <div className="text-white font-semibold">WhatsApp</div>
-              <div className="text-sm text-cyan-100/70">Fast response</div>
+              <div className="text-white font-semibold">{t('contact.whatsapp')}</div>
+              <div className="text-sm text-cyan-100/70">{t('contact.fast_response')}</div>
             </div>
           </div>
           <div className="mt-5 text-cyan-100/80 group-hover:text-white transition">
@@ -81,8 +83,8 @@ export default function Contact() {
               </svg>
             </span>
             <div>
-              <div className="text-white font-semibold">Email</div>
-              <div className="text-sm text-cyan-100/70">Tap to compose</div>
+              <div className="text-white font-semibold">{t('contact.email')}</div>
+              <div className="text-sm text-cyan-100/70">{t('contact.tap_compose')}</div>
             </div>
           </div>
 
@@ -104,20 +106,20 @@ export default function Contact() {
       </div>
 
       {/* Address */}
-      <div className="grid gap-6 p-6  sm:grid-cols-2 border-r-2 border-b-2 border-white/10">
+      <div className="grid gap-6 p-6 sm:grid-cols-2 border-r-2 border-b-2 border-white/10">
         <div className="bg-white/5 p-7 py-12 ring-1 ring-white/10">
-          <div className="text-white font-semibold text-xl">Office Address</div>
+          <div className="text-white font-semibold text-xl">{t('contact.office_address')}</div>
           <div className="text-cyan-100/80">
-            Sulaymaniyah, Kurdistan Region, Iraq
+            {t('contact.office_location')}
             <br />
-            Chwarbakh Building No. 2
+            {t('contact.office_building')}
           </div>
         </div>
 
         <div className="bg-white/5 p-7 py-12 ring-1 ring-white/10">
-          <div className="text-white font-semibold text-xl">Workshop</div>
+          <div className="text-white font-semibold text-xl">{t('contact.workshop')}</div>
           <div className="text-cyan-100/80">
-            Modern Warehouse, Sulaymaniyah near Mamostayan City, No. 33
+            {t('contact.workshop_location')}
           </div>
         </div>
       </div>
