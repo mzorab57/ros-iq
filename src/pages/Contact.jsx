@@ -44,13 +44,13 @@ export default function Contact() {
             </div>
           </div>
           <div className="mt-5 text-cyan-100/80 group-hover:text-white transition">
-            +964 7719905873
+            +964 750 246 0616
           </div>
         </Link>
 
         {/* WhatsApp */}
         <Link
-          to="https://wa.me/9647502460616"
+          to="https://wa.me/9647719905873"
           target="_blank"
           rel="noreferrer"
           className="group bg-white/5 p-7 ring-1 ring-white/10 transition hover:-translate-y-0.5 hover:border-green-400/40"
@@ -65,7 +65,7 @@ export default function Contact() {
             </div>
           </div>
           <div className="mt-5 text-cyan-100/80 group-hover:text-white transition">
-            +964 750 246 0616
+            +964 771 990 5873
           </div>
         </Link>
 

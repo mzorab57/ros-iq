@@ -1,15 +1,48 @@
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
-import i18n from 'i18next';
+import i18n from "i18next";
+
+const LANG_STORAGE_KEY = "selectedLanguage";
 
 const Hero = () => {
-
-    const { t } = useTranslation();
- 
+  const { t } = useTranslation();
+  const [lang, setLang] = useState(() => {
+    if (typeof window === "undefined") return i18n.language ?? "en";
+    const stored = window.localStorage.getItem(LANG_STORAGE_KEY);
+    return stored || i18n.language || "en";
+  });
 
   useEffect(() => {
-    document.documentElement.dir = i18n.language === "ku" ? "rtl" : "ltr";
-  }, [i18n.language]);
+    const syncLangFromStorage = () => {
+      const stored = window.localStorage.getItem(LANG_STORAGE_KEY);
+      const next = stored || i18n.language || "en";
+      setLang((prev) => (prev === next ? prev : next));
+    };
+
+    syncLangFromStorage();
+
+    const onStorage = (e) => {
+      if (e.key === LANG_STORAGE_KEY || e.key === null) syncLangFromStorage();
+    };
+
+    const onLangChanged = (lng) => {
+      setLang(lng);
+    };
+
+    window.addEventListener("storage", onStorage);
+    i18n.on("languageChanged", onLangChanged);
+
+    return () => {
+      window.removeEventListener("storage", onStorage);
+      i18n.off("languageChanged", onLangChanged);
+    };
+  }, []);
+
+  useEffect(() => {
+    document.documentElement.dir = lang === "ku" ? "rtl" : "ltr";
+  }, [lang]);
+
+  const isKurdish = lang === "ku";
   return (
     <div className="relative mt-8 min-h-screen w-full overflow-hidden flex items-center justify-center">
       
@@ -42,18 +75,18 @@ const Hero = () => {
         
         {/* Title Section */}
         <div className="text-center mb-12">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-cyan-500/10 border border-cyan-500/30 mb-6">
-            <span className="relative flex h-2 w-2">
-              <span className="animate-ping absolute h-full w-full rounded-full bg-cyan-400 opacity-75"></span>
-              <span className="relative h-2 w-2 rounded-full bg-cyan-400"></span>
-            </span>
-            <span className="text-xs font-bold text-cyan-300 tracking-widest uppercase">{t('hero.badge')}</span>
-          </div>
+          
           
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-semibold text-white mb-4">
-            {t('hero.pure')} <span className="text-cyan-400">{t('hero.water')}</span>
-            <span className="text-slate-500"> • </span>
-           {i18n.language === 'ku' ? null : t('hero.pure')} <span className="text-cyan-400">{t('hero.life')}</span>
+            {t("hero.pure")}{" "}
+            <span className="text-cyan-400">{t("hero.water")}</span>
+            {!isKurdish && (
+              <>
+                <span className="text-slate-500"> • </span>
+                {t("hero.pure")}{" "}
+                <span className="text-cyan-400">{t("hero.life")}</span>
+              </>
+            )}
           </h1>
         </div>
 
@@ -273,10 +306,7 @@ const Hero = () => {
                 <div className="absolute bottom-4 right-[35%] w-3 h-3 rounded-full bg-slate-600 border border-slate-400 shadow-inner"></div>
               </div>
 
-              {/* Orbiting Ring */}
-              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[110%] h-[200%] rounded-full border border-cyan-500/10 animate-orbit pointer-events-none">
-                <div className="absolute top-0 left-1/2 -translate-x-1/2 w-2 h-2 bg-cyan-400 rounded-full shadow-lg shadow-cyan-400/50"></div>
-              </div>
+             
             </div>
           </div>
 
